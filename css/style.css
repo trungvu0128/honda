@@ -1,0 +1,616 @@
+:root{
+    --font-size:16px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: var(--font-size);
+}
+
+span i{
+    font-size: 80%;
+    margin:1rem 0rem;
+}
+
+.top-header{
+    position: sticky;
+    top: 0;
+    background:#ffffff;
+    z-index: 10;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.navbar .logo{
+    width: 120px;
+}
+.navbar .navbar-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50px;
+    cursor: pointer;
+}
+.navbar .navbar-left .menu-icon{
+    font-size: 20px;
+}
+
+.navbar .navbar-left span{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.navbar .navbar-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+}
+
+.navbar .navbar-right .search-icon{
+    font-size: 20px;
+}
+
+.navbar .navbar-right a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.carousel .carousel-content
+{
+    height: 80vh;
+    background: url(../img/Honda_Hero_NA-Car-Of-The-Year_Desktop_1600x650.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.brand{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: calc(100vw / 6) calc(100vw / 6) calc(100vw / 6) calc(100vw / 6);
+}
+
+.brand .brand-block .brand-go::after{
+    content: "";
+    width: 30px;
+    height: 2px;
+    display: block;
+}
+
+.brand .brand-block .brand-image{
+    width: 300px;
+}
+
+.brand .brand-block{
+    position: relative;
+}
+
+.brand .brand-block .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.brand .brand-block .info img{
+    width: 80%;
+}
+
+.brand .brand-go
+{
+    font-weight: bold;
+}
+
+.brand .brand-blue .brand-go::after
+{
+    background: #ffffff;
+}
+
+.brand .brand-red .brand-go::after
+{
+    background: #ffffff;
+}
+
+.brand .brand-black .brand-go::after
+{
+    background: #ffffff;
+}
+
+.brand .brand-white .brand-go::after
+{
+    background: #000000;
+}
+
+.brand .brand-blue
+{
+    background: #007cc2;
+    color: #ffffff;
+}
+
+.brand .brand-red
+{
+    background: #cc0001;
+    color: #ffffff;
+}
+
+.brand .brand-white{
+    background: #EEE;
+}
+
+.brand .brand-red:hover
+{
+    background:#da0e0f;
+}
+
+.brand .brand-black
+{
+    background: #000000;
+    color: #ffffff;
+}
+
+.brand .brand-black:hover
+{
+    background: #242424;
+}
+
+.brand .brand-image{
+    overflow: hidden;
+}
+
+.brand .brand-image img{
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease-out;
+}
+
+.brand .brand-image img:hover{
+    transform: scale(1.1);
+}
+
+.brand  .brand-p2
+{
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.brand .brand-p4
+{
+    grid-column: 5 / span 2;
+}
+
+.brand .brand-p6
+{
+    grid-column: 4 / span 2;
+    grid-row: 2;
+}
+
+.brand .brand-p10
+{
+    grid-column: 3 / span 2;
+}
+
+.brand .brand-p11
+{
+    grid-column: 5 / span 2;
+    grid-row: 3;
+}
+
+#red-top{
+    grid-row: 4;
+    grid-column: 6;
+}
+
+.brand .brand-p14
+{
+    grid-column: 3 / span 2;
+    grid-row: 4;
+}
+
+.direct::before{
+    content: "";
+    display: block;
+    background: transparent;
+    position: absolute;
+    border: 20px solid transparent;
+    z-index: 1;
+}
+
+.direct.direct-right::before{
+    top: 50%;
+    left:100%;
+}
+
+.direct.direct-left::before{
+    top: 50%;
+    right:100%;
+}
+
+.direct.direct-bottom::before{
+    top: 100%;
+    left:50%;
+    border-bottom: 20px solid #EEE;
+    border-right: 20px solid #EEE;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.direct.direct-top::before{
+    border-bottom: 20px solid transparent;
+    top: 0;
+    left:50%;
+    transform: translate(-50%, -100%);
+}
+
+.brand-blue.direct.direct-right::before{
+    border-left:20px solid #007cc2;
+}
+
+.brand-white.direct.direct-left::before{
+    border-right: 20px solid #EEE;
+}
+
+.brand-red.direct.direct-right::before{
+    border-left:20px solid #cc0001;
+}
+
+.brand-black.direct.direct-left::before{
+    border-right: 20px solid #000000;
+}
+
+.brand .direct.direct-top::before{
+    border-bottom: 20px solid #cc0001;
+}
+
+.brand .brand-blue:hover
+{
+    background:#0283cc;
+}
+
+.brand .brand-blue:hover::before 
+{
+    border-left:20px solid #0283cc;
+}
+
+.brand .brand-red:hover
+{
+    background:#da0e0f;
+}
+
+.brand .brand-white:hover
+{
+    background:#ffffff;
+}
+
+.brand .brand-red.direct.direct-right:hover:before
+{
+    border-left:20px solid #da0e0f;
+}
+
+.brand .brand-red.direct.direct-top:hover:before
+{
+    border-bottom: 20px solid #da0e0f;
+}
+
+.brand .brand-white.direct.direct-left:hover:before
+{
+    border-right: 20px solid #ffffff;
+}
+
+.brand .brand-white.direct.direct-bottom:hover:before
+{
+    border-bottom: 20px solid #ffffff;
+    border-right: 20px solid #ffffff;
+}
+
+.brand .brand-black.direct.direct-left:hover:before
+{
+    border-right: 20px solid #242424;
+}
+
+.brand #blue:hover + #brand-p2 img
+{
+    transform: scale(1.1);
+}
+
+.brand .direct-right#red:hover + #brand-p4 img
+{
+    transform: scale(1.1);
+}
+
+.brand #red-right:hover + #brand-p4 img
+{
+    transform: scale(1.1);
+}
+
+.brand #white-bottom:hover ~ #brand-p8 img
+{
+    transform: scale(1.1);
+}
+
+.brand #black:hover ~ #brand-p6 img
+{
+    transform: scale(1.1);
+}
+
+.brand #red-right-2:hover + #brand-p10 img
+{
+    transform: scale(1.1);
+}
+
+.brand #red-right-3:hover + #brand-p13 img
+{
+    transform: scale(1.1);
+}
+
+.brand #white-left:hover + #brand-p14 img
+{
+    transform: scale(1.1);
+}
+
+.brand #red-top:hover ~ #brand-p11 img
+{
+    transform: scale(1.1);
+}
+
+.our-company .header{
+    padding: 2rem 0rem;
+    text-align: center;
+}
+
+.our-company .main .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.our-company .main .row .col{
+    width: 50%;
+}
+
+.our-company .main .row .col .item img{
+    width: 100%;
+    display: block;
+}
+
+.our-company .main .row .col .item{
+    width: 100%;
+    position: relative;
+    color: #ffffff;
+}
+
+.our-company .main .row .col .item h1{
+    position: absolute;
+    z-index: 2;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.our-company .main .row .col .item .description{
+    position: absolute;
+    z-index: 2;
+    top:80%;
+    left:50%;
+    transform:translate(-50%, -40%);
+    text-align: center;
+    width:100%;
+}
+
+
+.our-company .main .row .col .item .description p{
+    margin:0rem 10rem;
+}
+
+
+span i{
+    font-size: 80%;
+    margin:1rem 0rem;
+}
+
+.power-of-dreams{
+    position: relative;
+}
+
+.power-of-dreams .main{
+    height: 100vh;
+    background:url(../img/homepage-p1-philosophy-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+}
+
+.power-of-dreams .header{
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50% ,50%);
+    text-align: center;
+    gap: 20px;
+    
+}
+.power-of-dreams .header h1{
+    font-size: 2rem;
+}
+
+.power-of-dreams .header p{
+    margin: 1rem 0rem;
+}
+
+.power-of-dreams .header span{
+    font-weight: bold;
+}
+
+.story .header{
+    padding:2rem 0rem;
+    text-align: center;
+}
+
+.story .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding:0% 5% 5% 5%;
+    background:#f9f9f9;
+}
+
+.story .row .col{
+    width: calc(100% / 3);
+    height:29rem;
+    
+}
+
+.story .row .col .item{
+    position: relative;
+    overflow: hidden;
+    border: none;
+    height:100%;
+}
+
+.story .row .col .item img:hover{
+    transform: scale(1.1);
+}
+
+.story .row .col .item img{
+    width:100%;
+    display: block;
+    transition: all 0.5s ease-out;
+}
+
+.story .row .col .item .info{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding:0rem 1rem;
+    position: relative;
+}
+
+.story .row .col .item .info h1{
+    margin-top:1rem;
+}
+
+.story .row .col .direct.direct-top::before{
+    width:20px;
+    position: absolute;
+    top: 0%;
+    left:50%;
+    border-right: 20px solid #ffffff;
+    transform: translate(-50%, -125%) rotate(90deg);
+}
+
+.story .row .col .item span{
+    color: #007cc2;
+    font-weight: bold;
+}
+
+.story .row .col .item .info-icon{
+    position: absolute;
+    top:5%;
+    left:85%;
+}
+
+.story .row .col .item .info-icon i{
+    font-size: 3rem;
+    color: #ffffff
+}
+.story .row .col .item .info-icon .fa-twitter{
+    color: #007cc2
+}
+
+.story .row .col .item .content{
+    height:100%;
+    background:#f2f2f2;
+}
+
+.story .row .col .item .content .main-content img{
+    width: 3rem;
+    border-radius: 1rem;
+}
+
+.story .row .col .item .content .main-content{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    padding: 2rem;
+
+}
+
+.story .row .col .item .content .main-content .tag{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.story .row .col .item .content .main-content .title{
+    display:flex;
+    align-items: center;
+    color: #337ab7;
+}
+
+.story .row .col .item .content .paragraph{
+    margin: 10px 0px;
+    line-height:2rem;
+    font-size:1.5rem;
+}
+
+.footer .content{
+    padding: 0rem 3rem;
+    background:#eeeeee;
+}
+
+.footer .content .row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .content .row .col{
+    width: calc(100% / 3);
+}
+
+.footer .content .row .col .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.footer span i{
+    font-size: 65%;
+}
+.footer h4{
+    color: #8f8f8f;
+    margin-top:2rem;
+}
+
+.footer p{
+    color: #8f8f8f;
+}
+
+
+
+
+
+
+
+
+
+
+

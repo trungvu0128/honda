@@ -38,11 +38,11 @@ span i{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 50px;
     cursor: pointer;
 }
 .navbar .navbar-left .menu-icon{
-    font-size: 20px;
+    font-size: 30px;
+    margin-right:10px;
 }
 
 .navbar .navbar-left span{
@@ -58,7 +58,7 @@ span i{
 }
 
 .navbar .navbar-right .search-icon{
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .navbar .navbar-right a {
@@ -471,19 +471,13 @@ span i{
 
 .story .row .col{
     width: calc(100% / 3);
-    height:29rem;
-    
+    max-height:35rem;
 }
 
 .story .row .col .item{
     position: relative;
     overflow: hidden;
-    border: none;
     height:100%;
-}
-
-.story .row .col .item img:hover{
-    transform: scale(1.1);
 }
 
 .story .row .col .item img{
@@ -492,15 +486,22 @@ span i{
     transition: all 0.5s ease-out;
 }
 
+.story .row .col .item .image-full{
+    height: 100%;
+}
+.story .row .col .item img:hover{
+    transform: scale(1.1);
+}
 .story .row .col .item .info{
     display:flex;
     flex-direction: column;
-    justify-content:space-around;
     align-items: center;
     text-align: center;
     gap: 1rem;
-    padding:0rem 1rem;
+    padding:2rem 1rem;
     position: relative;
+    background:#f9f9f9;
+    height:100%;
 }
 
 .story .row .col .item .info h1{
@@ -512,7 +513,7 @@ span i{
     position: absolute;
     top: 0%;
     left:50%;
-    border-right: 20px solid #ffffff;
+    border-right: 20px solid #f9f9f9;
     transform: translate(-50%, -125%) rotate(90deg);
 }
 
@@ -571,8 +572,22 @@ span i{
     font-size:1.5rem;
 }
 
+.story .action{
+    color:#90908f;
+    padding-top:10px;
+}
+
+.story .action i{
+    padding-right:5px;
+    font-size: 15px;
+}
+
+.story .time{
+    color:#337ab7;
+}
+
 .footer .content{
-    padding: 0rem 3rem;
+    padding: 3rem 3rem;
     background:#eeeeee;
 }
 
@@ -602,6 +617,32 @@ span i{
 
 .footer p{
     color: #8f8f8f;
+}
+
+.footer .social-contact{
+    text-align: center;
+    padding:5rem 0rem 2rem 0rem;
+}
+
+.footer .social-contact a{
+    margin-right: 1rem;
+}
+
+.footer .copyright{
+    color: #8f8f8f;
+    text-align: center;
+}
+
+.footer .copyright .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:1rem;
+}
+
+.footer .final-link{
+    margin-top: 20px;
 }
 
 

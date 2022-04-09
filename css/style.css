@@ -1,7 +1,6 @@
 :root {
     --font-size: 16px;
-    --border-direct: 1.5rem;
-    --border-direct-rf: 1rem;
+    --border-direct: 1.2rem;
 }
 
 * {
@@ -219,7 +218,7 @@ span i {
     display: block;
     background: transparent;
     position: absolute;
-    border: var(--border-direct-rf) solid transparent;
+    border: var(--border-direct) solid transparent;
     z-index: 1;
 }
 
@@ -245,7 +244,7 @@ span i {
 
 .direct.direct-top::before {
     border-bottom: var(--border-direct) solid transparent;
-    top: 0;
+    top: 1%;
     left: 50%;
     transform: translate(-50%, -100%);
 }
@@ -707,31 +706,31 @@ span i {
         top: 50%;
         left: 100%;
         transform: translateY(-50%);
-        border: var(--border-direct-rf) solid transparent;
-        border-right: var(--border-direct-rf) solid transparent;
-        border-left: var(--border-direct-rf) solid #cc0001;
+        border: var(--border-direct) solid transparent;
+        border-right: var(--border-direct) solid transparent;
+        border-left: var(--border-direct) solid #cc0001;
     }
 
     #red-right-2:before {
         top: 50%;
-        left: 0%;
+        left: 1%;
         transform: translate(-100%, -50%);
-        border-left: var(--border-direct-rf) solid transparent;
-        border-right: var(--border-direct-rf) solid #cc0001;
+        border-left: var(--border-direct) solid transparent;
+        border-right: var(--border-direct) solid #cc0001;
     }
 
     #red-right::before {
         top: 100%;
         left: 50%;
-        border: var(--border-direct-rf) solid transparent;
-        border-bottom: var(--border-direct-rf) solid #cc0001;
-        border-right: var(--border-direct-rf) solid #cc0001;
+        border: var(--border-direct) solid transparent;
+        border-bottom: var(--border-direct) solid #cc0001;
+        border-right: var(--border-direct) solid #cc0001;
         transform: translate(-50%, -60%) rotate(45deg);
     }
 
     .direct.direct-bottom::before {
-        border-bottom: var(--border-direct-rf) solid #EEE;
-        border-right: var(--border-direct-rf) solid #EEE;
+        border-bottom: var(--border-direct) solid #EEE;
+        border-right: var(--border-direct) solid #EEE;
     }
 
     .our-company .main .row .col .item .description span {
@@ -899,7 +898,7 @@ span i {
         display: block;
         background: transparent;
         position: absolute;
-        border: var(--border-direct-rf) solid transparent;
+        border: var(--border-direct) solid transparent;
         z-index: 1;
     }
 
@@ -919,25 +918,25 @@ span i {
         top: 50%;
         right: 100%;
         transform: translateY(-50%);
-        border-right: var(--border-direct-rf) solid #EEE;
+        border-right: var(--border-direct) solid #EEE;
     }
 
     
 
     #blue-right::after {
-        border-left: var(--border-direct-rf) solid #007cc2;
+        border-left: var(--border-direct) solid #007cc2;
     }
 
     #blue-right:hover::after {
-        border-left: var(--border-direct-rf) solid #0283cc;
+        border-left: var(--border-direct) solid #0283cc;
     }
 
     .brand-white.direct.direct-left::after {
-        border-right: var(--border-direct-rf) solid #EEE;
+        border-right: var(--border-direct) solid #EEE;
     }
 
     .brand-white.direct.direct-left:hover::after {
-        border-right: var(--border-direct-rf) solid #ffffff;
+        border-right: var(--border-direct) solid #ffffff;
     }
 
     #red-right::after,
@@ -945,40 +944,40 @@ span i {
         top: 50%;
         left: 0%;
         transform: translate(-100%, -50%);
-        border-left: var(--border-direct-rf) solid transparent;
-        border-right: var(--border-direct-rf) solid #cc0001;
+        border-left: var(--border-direct) solid transparent;
+        border-right: var(--border-direct) solid #cc0001;
     }
 
     #red-right:hover::after,
     #red-top:hover::after {
-        border-right: var(--border-direct-rf) solid #da0e0f;
+        border-right: var(--border-direct) solid #da0e0f;
     }
 
     #black-left::after {
         top: 50%;
         left: 100%;
-        border-right: var(--border-direct-rf) solid transparent;
-        border-left: var(--border-direct-rf) solid #000000;
+        border-right: var(--border-direct) solid transparent;
+        border-left: var(--border-direct) solid #000000;
     }
 
     #black-left:hover::after {
-        border-left: var(--border-direct-rf) solid #242424;
+        border-left: var(--border-direct) solid #242424;
     }
 
     #red-right-2::after,
     #red-right-3::after {
         top: 50%;
         left: 100%;
-        border-right: var(--border-direct-rf) solid transparent;
-        border-left: var(--border-direct-rf) solid #cc0001;
+        border-right: var(--border-direct) solid transparent;
+        border-left: var(--border-direct) solid #cc0001;
     }
 
     #red-right-2:hover::after,
     #red-right-3:hover::after {
         top: 50%;
         left: 100%;
-        border-right: var(--border-direct-rf) solid transparent;
-        border-left: var(--border-direct-rf) solid #da0e0f;
+        border-right: var(--border-direct) solid transparent;
+        border-left: var(--border-direct) solid #da0e0f;
     }
 
 

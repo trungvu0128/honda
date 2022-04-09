@@ -625,6 +625,12 @@ span i {
     margin-top: 20px;
 }
 
+@media screen and (max-width:992px) {
+    .our-company .main .row .col .item .description p {
+        margin: 0rem 5rem;
+    }
+}
+
 
 @media screen and (max-width:768px) {
 
@@ -727,7 +733,7 @@ span i {
         border-bottom: var(--border-direct-rf) solid #EEE;
         border-right: var(--border-direct-rf) solid #EEE;
     }
-    
+
     .our-company .main .row .col .item .description span {
         font-weight: bold;
     }

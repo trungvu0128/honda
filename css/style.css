@@ -62,13 +62,18 @@ span i {
 }
 
 .navbar .navbar-right .search-icon {
-    font-size: 30px;
+    font-size: 1.5rem;
+}
+
+.navbar .navbar-right .span {
+    font-size: 1rem;
 }
 
 .navbar .navbar-right a {
     text-decoration: none;
     color: #000000;
     font-weight: bold;
+    font-size: 0.8rem;
 }
 
 .carousel .carousel-content {
@@ -718,7 +723,11 @@ span i {
         transform: translate(-50%, -60%) rotate(45deg);
     }
 
-
+    .direct.direct-bottom::before {
+        border-bottom: var(--border-direct-rf) solid #EEE;
+        border-right: var(--border-direct-rf) solid #EEE;
+    }
+    
     .our-company .main .row .col .item .description span {
         font-weight: bold;
     }
@@ -774,7 +783,7 @@ span i {
 
     .brand {
         grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
-        grid-template-rows: calc(100vw / 3) calc(100vw / 3) calc(100vw / 3) calc(100vw / 3) calc(100vw / 3) calc(100vw / 3) calc(100vw / 3);
+        grid-template-rows: calc(100vw / 3) calc(100vw / 3) calc(100vw / 3) calc(100vw / 3) calc(100vw / 3) calc(100vw / 3) calc(100vw / 3) calc(100vw / 3);
     }
 
     .brand .brand-p2 {
@@ -785,6 +794,11 @@ span i {
     .brand .brand-p4 {
         grid-column: 1 /span 2;
         grid-row: 2;
+    }
+
+    .brand .brand-p5 {
+        grid-column: 3;
+        grid-row: 6;
     }
 
     .brand .brand-p6 {
@@ -817,6 +831,13 @@ span i {
         grid-row: 8;
     }
 
+    #white-left {
+        grid-column:3;
+        grid-row:8
+    }
+
+
+
     .brand .brand-black {
         grid-column: 1;
         grid-row: 3;
@@ -839,10 +860,6 @@ span i {
 
     #red-top {
         grid-column: 3;
-        grid-row: 6;
-    }
-
-    .brand .brand-p14 {
         grid-row: 6;
     }
 
@@ -891,6 +908,15 @@ span i {
         right: 100%;
         transform: translateY(-50%);
     }
+
+    #white-bottom::after{
+        top: 50%;
+        right: 100%;
+        transform: translateY(-50%);
+        border-right: var(--border-direct-rf) solid #EEE;
+    }
+
+    
 
     #blue-right::after {
         border-left: var(--border-direct-rf) solid #007cc2;
@@ -1023,7 +1049,13 @@ span i {
 
     .story .row .col .item .info {
         background: #f9f9f9;
+        gap:0.2rem;
     }
+
+    .story .row .col .item .info h1 {
+        margin-top:0
+    }
+    
 
     .footer .content .row {
         display: block;
